@@ -1,0 +1,15 @@
+# create a Python-focused .gitignore
+curl -L https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore -o .gitignore
+
+# add project-specific ignores
+cat >> .gitignore << 'EOF'
+# --- project specific ---
+.vscode/
+.venv/
+outputs/
+tfrecords/
+*.ipynb_checkpoints
+# Large raw images & intermediate debug renders
+*_proc.png
+*_enh.png
+EOF

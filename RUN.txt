@@ -1,0 +1,1 @@
+python OCR.py --input "C:\Users\DELL\Desktop\OCR\img2.png" 
